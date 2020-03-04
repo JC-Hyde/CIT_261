@@ -1,0 +1,12 @@
+// Code from CobyCarter.com
+
+function storeStrings() {
+        var display = document.getElementById('display7');
+        var testString = "This is a string to test out Localstorage API's.";
+        window.localStorage.setItem('Test String', testString);
+        var localstoragestring = window.localStorage.getItem('Test String');
+        display.innerHTML += "We have set the localstorage item to the test string shown below:"
+        display.innerHTML += localstoragestring;
+        window.localStorage.clear();
+        display.innerHTML += "LocalStorage has been cleared."
+    }
